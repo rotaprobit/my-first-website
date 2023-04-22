@@ -1,0 +1,72 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emmet learn 빠른 단축키 배우기</title>
+</head>
+<body>
+    <h1>emmet 명령어 익히기</h1>
+        <p>괄호로 굳이 시작하지 않아도 아래 주석에서 확인할 수 있듯이 필요한 div와 안에 구성을 설정했다면 원하는 만큼 한번에 부모,자식 태그들을 생성할 수 있다.</p>
+        
+        <!-- div>ul>li>p -->
+        <div>
+            <ul>
+                <li>
+                    <p>안녕!</p>
+                </li>
+            </ul>
+        </div>
+        <!-- div#cool>ul>li*4 -->
+        <div id="cool">
+            <ul>
+                <li>리스트1</li>
+                <li>리스트2</li>
+                <li>리스트3</li>
+                <li>리스트4</li>
+            </ul>
+            <ol></ol>
+        </div>
+        <!-- div>ul>li^ol -->
+        <div>
+            <ul>
+                <li>와 진짜 편하다 ㅋㅋㅋ 이제부터라도 괄호 말고 한번에 치는 습관을 들여서 빠르게 html을 구사할 수 있도록 맥북으로 연습하자!! </li>
+            </ul>
+            <ol></ol>
+        </div>
+        <!--그룹화 하는 방법 div>(header>ul>li*3>a)+footer>p -->
+        <div>
+            <header>
+                <ul>
+                    <li><a href="#">그룹1</a></li>
+                    <li><a href="#">그룹2</a></li>
+                    <li><a href="#">그룹3</a></li>
+                </ul>
+            </header>
+            <footer>
+                <p></p>
+            </footer>
+        </div>
+        <!-- p태그 안에 텍스트를 넣고 싶을 때는 p{안녕하세요! 반가워요!} -->
+        <p>안녕하세요!반가워요!</p>
+        <!-- {$}는 태그 클래스나 안에 내용에 숫자를 넣어줄 수 있음 -->
+        <!-- p.class${item $}*4 -->
+        <p class="class1">item 1</p>
+        <p class="class2">item 2</p>
+        <p class="class3">item 3</p>
+        <p class="class4">item 4</p>
+        <!-- 웹사이트에 대충 아무 더미용 텍스트 넣어줄땐 -->
+        <!-- p>lorem -->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam harum officia ab assumenda ex consectetur unde porro! Eos doloribus soluta nulla consectetur facilis modi, id commodi accusantium, numquam sint deserunt?</p>
+        <!-- lorem에서 단어 갯수를 한정 지을때 -->
+        <!-- p>lorem4 n개의 단어만 들어가게 할때 바로 숫자 넣기 -->
+        <p>Lorem ipsum dolor sit.</p>
+
+        <!--태그를 다중 선택해서 수정해줄때는 option키를 누른 상태에서 수정할 줄을 선택해서 태그를 수정하면 됨.-->
+
+        <li>과자1</li><p class="option_learn">옵션공부1</p><a class="option_learn">옵션공부2</a>
+        <li>과자2</li><a class="option_learn">옵션공부2</a>
+        <li>과자3</li><p class="option_learn">옵션공부1</p>
+
+    </body>
+</html>
